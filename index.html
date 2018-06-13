@@ -8,12 +8,14 @@
 </head>
 
 <body>
-  <video id="video" preload="preload" src="http://t1.aixinxi.net/o_1cfsf6och19j4cl41dfth6ucqla.mp4" x5-playsinline="" playsinline="" webkit-playsinline="" poster="" preload="auto"></video>
+  <video id="video" style="object-fit: contain;" preload="preload" src="http://t1.aixinxi.net/o_1cfsf6och19j4cl41dfth6ucqla.mp4" x5-playsinline=""
+          playsinline="" webkit-playsinline="" poster="" preload="auto"></video>
   
   
   <script>
  // window.onload=function(){
    // }
+        document.getElementById('video').play(); 
 document.addEventListener("WeixinJSBridgeReady", function () { 
         document.getElementById('video').play(); 
     }, false); 
