@@ -8,18 +8,15 @@
 </head>
 
 <body>
-  <video id="video" src="http://t1.aixinxi.net/o_1cfsf6och19j4cl41dfth6ucqla.mp4" x5-playsinline="" playsinline="" webkit-playsinline="" poster="" preload="auto"></video>
+  <video id="video" preload="preload" src="http://t1.aixinxi.net/o_1cfsf6och19j4cl41dfth6ucqla.mp4" x5-playsinline="" playsinline="" webkit-playsinline="" poster="" preload="auto"></video>
   
   
   <script>
  // window.onload=function(){
-    setTimeout(()=>{
-document.getElementById("video").play(); 
-   },1000); 
    // }
-  document.addEventListener("WeixinJSBridgeReady", function() { 
-document.getElementById("video").play(); 
-}, false);
+document.addEventListener("WeixinJSBridgeReady", function () { 
+        document.getElementById('video').play(); 
+    }, false); 
   </script>
 </body>
 
