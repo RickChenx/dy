@@ -3,19 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>CodePen Project Editor</title>
+  <title>德浴卫浴</title>
   <link rel="stylesheet" href="./css.css">
 </head>
 
 <body>
-  <video autoplay id="video" src="http://t1.aixinxi.net/o_1cfsf6och19j4cl41dfth6ucqla.mp4"></video>
+  <video autoplay id="video" src="http://t1.aixinxi.net/o_1cfsf6och19j4cl41dfth6ucqla.mp4" x5-video-player-type="h5" x5-vide 
+o-player-fullscreen="true"></video>
   <script>
   window.onload=function(){
-    const video=document.getElementById('video');
     setTimeout(()=>{
-    video.play()
+document.getElementById(‘video’).play(); 
     },1000);
   }
+  document.addEventListener(“WeixinJSBridgeReady”, function() { 
+document.getElementById(‘video’).play(); 
+}, false);
   </script>
 </body>
 
